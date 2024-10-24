@@ -14,8 +14,7 @@ public class GeradorAleatorio {
     }
 
     //Cria um conjunto de dados a partir do tamanho definido (Ex: 100 mil)
-    public Registro[] inserirRegistros(){
-        Random random = new Random(1);
+    public Registro[] inserirRegistros(Random random){
 
         for (int i = 0; i < tamanhoVetor; i++){
             int codigo = random.nextInt(1_000_000_000);

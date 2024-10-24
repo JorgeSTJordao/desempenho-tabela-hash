@@ -4,7 +4,7 @@ package dados;
 public class Registro {
 
     //Código que simboliza a chave (sem usar algum tipo de hash)
-    public int codigo;
+    private int codigo;
     public String valor = "";
 
     public Registro(int codigo){
