@@ -44,32 +44,19 @@ public class TabelaHash {
                 tabelaHash[i] = listaEncadeada;
             }
 
+            //Total de colisões
             totalColisoes += tabelaHash[i].inserirNo(conjunto[j].getCodigo());
 
             j++;
         }
     }
 
-    public String buscaHashing(int chave){
-        int i = h(chave);
 
-        if(tabelaHash[i] == null)
-            return "Null";
-        else {
-            No atual = tabelaHash[i].raiz;
+    public void buscarValorAleatorio(int codigo){
 
-            while (atual.getProximo() != null){
-                atual = atual.getProximo();
-            }
+        int numComparacaos = 0;
 
-            if (atual.getRegistroNo().getCodigo() == chave)
-                return "Posição: " + i + " | " + atual.getRegistroNo().getCodigo();
-
-            return "Null";
-        }
-    }
-
-    public void imprimirTabelaHash(){
+        long inicioContagem = System.currentTimeMillis();
 
         for (int i = 0; i < tamanhoTabela; i++){
             ListaEncadeada listaEncadeadaAtual = tabelaHash[i];
@@ -78,12 +65,19 @@ public class TabelaHash {
                 No atual = listaEncadeadaAtual.raiz;
 
                 while (atual != null) {
-                    System.out.print(atual.getRegistroNo().getCodigo() + " -> ");
-                    atual = atual.getProximo();
-                }
-                //Total de colisões
+                    if (atual.getRegistroNo().getCodigo() == codigo){
+                        long contagemFinalMilissegundos = System.currentTimeMillis() - inicioContagem;
 
-                System.out.print("\n");
+                        System.out.println("Busca do código " + codigo +
+                                "| Nº de comparações " + numComparacaos +
+                                "| Levou em ms: " + contagemFinalMilissegundos);
+
+                        return;
+                    }
+
+                    atual = atual.getProximo();
+                    numComparacaos += 1;
+                }
             }
         }
     }

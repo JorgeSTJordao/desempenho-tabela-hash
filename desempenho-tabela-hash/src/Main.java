@@ -6,8 +6,10 @@ Conjuntos de dados: 100 mil, 500 mil, 1 milhão, 5 milhões e 100 milhões
  */
 
 import dados.ArmazenamentoConjuntos;
+import dados.Registro;
 import tabelaHash.TabelaHash;
 
+import java.util.Random;
 import java.util.Scanner;
 
 //Inicia o projeto
@@ -16,23 +18,35 @@ public class Main {
 
     public static void main(String[] args) {
         ArmazenamentoConjuntos am = new ArmazenamentoConjuntos();
-        int tamanho1 = 1000000;
-        int tamanho2 = 5000000;
-        int tamanho3 = 20000000;
 
-        int tamanhoTabela1 = 1000;
-        int tamanhoTabela2 = 10000;
-        int tamanhoTabela3 = 100000;
+        int[] tamanhosTabelas = {500000, 750000, 999999}; //Tamanhos das tabelas hash
+        int[] tamanhos = {1000000, 5000000, 20000000}; //Tamanhos dos conjutos
+        String[] tipoHash = {"Divisão", "Multiplicação", "Divisão por nº primo"};
 
-        am.inserirConjunto(tamanho1, 2432);
-        //am.inserirConjunto(tamanho2, 46563);
-        //am.inserirConjunto(tamanho3, 46563);
+        //Tamanhos da tabela hash
+        for (int i = 0; i < 3; i++){
 
-        //am.inserirConjuntos(tamanho1, 0, 3);
-        //am.inserirConjuntos(tamanho2, 3, 6);
-        //am.inserirConjuntos(tamanho3, 6, 9);
+            //Tamanhos dos conjuntos
+            for (int j = 0; j < 3; j++){
+                am.inserirConjunto(tamanhos[j], 125);
 
-        permutacoes(tamanhoTabela1, tamanho1, 0, am);
+                for (int w = 0; w < 3; w++){
+                    System.out.println("Tamanho da tabela hash: " + tamanhosTabelas[i] +
+                            " | Tamanho dos conjuntos: " + tamanhos[i] +
+                            " | Hash: " + tipoHash[w]);
+
+                    permutacoes(tamanhosTabelas[i], tamanhos[j], w, am);
+
+                    System.out.print("\n");
+                }
+            }
+        }
+
+        //am.inserirConjunto(tamanho1, 125);
+        //am.inserirConjunto(tamanho2, 125);
+        //am.inserirConjunto(tamanho3, 125);
+
+        //permutacoes(tamanhoTabela1, tamanho1, 0, am);
         //permutacoes(tamanhoTabela1, tamanho1, 1, am);
         //permutacoes(tamanhoTabela1, tamanho1, 2, am);
         //permutacoes(tamanhoTabela1, tamanho2, 0, am);
@@ -71,25 +85,37 @@ public class Main {
     {
         TabelaHash tabelaHash = new TabelaHash(tamanhoTabela, tamanho, hash);
 
-        long start = System.currentTimeMillis();
+        //Cálculo do tempo
+        long inicioContagem = System.currentTimeMillis();
 
         tabelaHash.iniciarInsercao(am.getUnicoConjuntoDados());
 
-        long elapsedTimeMillis = System.currentTimeMillis()-start;
+        long contagemFinalMilissegundos = System.currentTimeMillis() - inicioContagem;
 
-        System.out.println("Tempo total: " + elapsedTimeMillis / 1000);
-        System.out.println(tabelaHash.totalColisoes);
+        System.out.println("Tempo total (ms): " + contagemFinalMilissegundos);
+        System.out.println("Total de colisões: " + tabelaHash.totalColisoes);
 
-        Scanner scanner = new Scanner(System.in);
-        int codigo = 0;
+        int[] codigosAleatorios = getValoresAleatorios(am, tamanho);
 
-        while (codigo != -1) {
-            System.out.print("Digite o código: ");
-            codigo = scanner.nextInt();
+        //Identificar 5 código diferentes + qtde comparações
+        for (int i = 0; i < 5; i++){
+            int codigo = codigosAleatorios[i];
 
-            String codigoEncontrado = tabelaHash.buscaHashing(codigo);
-            System.out.println(codigoEncontrado);
+            tabelaHash.buscarValorAleatorio(codigo);
         }
 
+    }
+
+    public static int[] getValoresAleatorios(ArmazenamentoConjuntos am, int tamanho){
+        int[] valores = new int[5];
+
+        Random selecao = new Random();
+
+        for (int i = 0; i < 5; i++){
+            int indiceSelecionado = selecao.nextInt(tamanho);
+            valores[i] = am.getUnicoConjuntoDados()[indiceSelecionado].getCodigo();
+        }
+
+        return valores;
     }
 }
