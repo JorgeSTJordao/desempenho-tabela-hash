@@ -13,7 +13,7 @@ public class GeradorAleatorio {
         this.conjuntoDados = new Registro[tamanhoVetor];
     }
 
-    //Cria um conjunto de dados a partir do tamanho definido (Ex: 100 mil)
+    //Cria o vetor a partir do seed, range e tamanho do vetor
     public Registro[] inserirRegistros(Random random){
 
         for (int i = 0; i < tamanhoVetor; i++){

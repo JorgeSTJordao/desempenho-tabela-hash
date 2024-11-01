@@ -5,31 +5,40 @@ import dados.Registro;
 public class TabelaHash {
     public ListaEncadeada[] tabelaHash;
     public int tamanho;
-    public int hash;
+    public int tipoHash;
 
     public int tamanhoTabela;
     public int totalColisoes;
 
     public TabelaHash(int tamanhoTabela,int tamanho, int hash){
-        this.tamanho = tamanho; //10, 100, 1000
+        this.tamanho = tamanho;
         this.tamanhoTabela = tamanhoTabela;
         this.tabelaHash = new ListaEncadeada[tamanhoTabela];
-        this.hash = hash;
+        this.tipoHash = hash;
         this.totalColisoes = 0;
     }
 
     //Seleciona o hash desejado a partir do construct
     public int h(int chave){
-        if (hash == 0)
+        if (tipoHash == 0)
             return chave % tamanhoTabela;
-        else if (hash == 1) {
+        else if (tipoHash == 1) {
             double numero_ouro = (2.2360679774997896964091736687313 - 1) / 2;
             return (int) (tamanhoTabela * ((chave * numero_ouro) % 1));
         }
-        int fatorPrimo = 37;
-        int resultado = (chave * fatorPrimo) % tamanhoTabela;
+        else {
+            int parte1 = chave / 1000000; // 3 primeiros dígitos
+            int parte2 = (chave / 1000) % 1000; // 3 dígitos do meio
+            int parte3 = chave % 1000; // 3 últimos dígitos
 
-        return (resultado < 0) ? resultado + tamanhoTabela : resultado;
+
+            // Primeiramente, faremos a separação dos 9 digitos em 3 partes iguais
+            // Agora, realizamos a soma destas 3 partes
+            int soma_partes = parte1 + parte2 + parte3;
+
+            // Por fim, retornamos o resto da divisão desta soma pelo tamanho da tabela
+            return soma_partes % tamanhoTabela;
+        }
     }
 
     //Transforma os registros em uma lista encadeada
@@ -56,29 +65,28 @@ public class TabelaHash {
 
         int numComparacaos = 0;
 
-        long inicioContagem = System.currentTimeMillis();
+        long inicioContagem = System.nanoTime();
 
-        for (int i = 0; i < tamanhoTabela; i++){
-            ListaEncadeada listaEncadeadaAtual = tabelaHash[i];
+        int posicao = h(codigo);
 
-            if (tabelaHash[i] != null) {
-                No atual = listaEncadeadaAtual.raiz;
+        No atual = tabelaHash[posicao].raiz;
 
-                while (atual != null) {
-                    if (atual.getRegistroNo().getCodigo() == codigo){
-                        long contagemFinalMilissegundos = System.currentTimeMillis() - inicioContagem;
+        while (atual != null) {
+            if (atual.getRegistroNo().getCodigo() == codigo){
+                long contagemFinalMilissegundos = System.nanoTime() - inicioContagem;
 
-                        System.out.println("Busca do código " + codigo +
-                                "| Nº de comparações " + numComparacaos +
-                                "| Levou em ms: " + contagemFinalMilissegundos);
+                System.out.println(
+                        "Código buscado: " + codigo + " | " +
+                        "Posicão:" + posicao + " | " +
+                        "Quantidade comparações: " + numComparacaos + " | " +
+                        "Tempo levado: " + contagemFinalMilissegundos + " ns");
 
-                        return;
-                    }
-
-                    atual = atual.getProximo();
-                    numComparacaos += 1;
-                }
+                return;
             }
+
+            atual = atual.getProximo();
+            numComparacaos += 1;
+
         }
     }
 
