@@ -8,6 +8,8 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Random random = new Random(43);
+
         String[] tipoHash = {"Divisão", "Multiplicação", "Dobramento"};
 
         int[] tamanhosConjunto = {1000000, 5000000, 20000000};
@@ -22,16 +24,15 @@ public class Main {
         for (int indiceTamanhoHash = 0; indiceTamanhoHash < 3; indiceTamanhoHash++){
 
             //Tamanho do conjunto
-            for (int indiceTamanho = 0; indiceTamanho < 3; indiceTamanho++){
+            for (int  indiceTamanho = 0; indiceTamanho < 3; indiceTamanho++){
 
                 if (indiceTamanho == 0 && indiceTamanhoHash == 0) {
 
                     for (int z = 0; z < 5; z++){
-                        Random random = new Random();
-
                         int indiceAleatorio = random.nextInt(tamanhosConjunto[indiceTamanho]);
 
-                        valoresEscolhidosEstaticos[z] = am.getUnicoConjuntoDados()[0][indiceAleatorio].getCodigo();
+                        valoresEscolhidosEstaticos[z] = am.getUnicoConjuntoDados()[indiceTamanho][indiceAleatorio]
+                                .getCodigo();
                     }
                 }
 

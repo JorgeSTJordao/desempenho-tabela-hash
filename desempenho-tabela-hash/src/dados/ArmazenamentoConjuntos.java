@@ -5,7 +5,6 @@ import java.util.Random;
 //Persistência dos dados (conjuntos)
 public class ArmazenamentoConjuntos {
 
-    static Random random = new Random(43);
 
     final private Registro[][] conjuntoDados = new Registro[3][];
 
@@ -14,6 +13,8 @@ public class ArmazenamentoConjuntos {
         GeradorAleatorio geradorAleatorio;
 
         for (int i = 0; i < 3; i++){
+            Random random = new Random(43);
+
             geradorAleatorio = new GeradorAleatorio(tamanhos[i]);
 
             conjuntoDados[i] = geradorAleatorio.inserirRegistros(random);

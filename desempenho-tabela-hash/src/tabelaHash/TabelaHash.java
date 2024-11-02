@@ -51,10 +51,13 @@ public class TabelaHash {
             if (tabelaHash[i] == null) {
                 ListaEncadeada listaEncadeada = new ListaEncadeada();
                 tabelaHash[i] = listaEncadeada;
+
+                tabelaHash[i].inserirNo(conjunto[j].getCodigo());
+            } else {
+                //Total de colisões
+                totalColisoes += tabelaHash[i].inserirNo(conjunto[j].getCodigo());
             }
 
-            //Total de colisões
-            totalColisoes += tabelaHash[i].inserirNo(conjunto[j].getCodigo());
 
             j++;
         }

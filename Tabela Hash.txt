@@ -1,0 +1,267 @@
+Tipo de Hash: Divisão| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 297 ms
+Nº total de Colisões: 567821 colisões
+Código buscado: 919061487 | Posicão:61487 | Quantidade comparações: 1 | Tempo levado: 9900 ns
+Código buscado: 656540772 | Posicão:40772 | Quantidade comparações: 1 | Tempo levado: 3200 ns
+Código buscado: 266198740 | Posicão:198740 | Quantidade comparações: 0 | Tempo levado: 900 ns
+Código buscado: 923186538 | Posicão:186538 | Quantidade comparações: 0 | Tempo levado: 7300 ns
+Código buscado: 500235818 | Posicão:235818 | Quantidade comparações: 1 | Tempo levado: 1200 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 454 ms
+Nº total de Colisões: 567953 colisões
+Código buscado: 919061487 | Posicão:358509 | Quantidade comparações: 0 | Tempo levado: 2300 ns
+Código buscado: 656540772 | Posicão:48047 | Quantidade comparações: 1 | Tempo levado: 1800 ns
+Código buscado: 266198740 | Posicão:41198 | Quantidade comparações: 1 | Tempo levado: 1100 ns
+Código buscado: 923186538 | Posicão:220173 | Quantidade comparações: 1 | Tempo levado: 1200 ns
+Código buscado: 500235818 | Posicão:457053 | Quantidade comparações: 0 | Tempo levado: 1100 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 16443 ms
+Nº total de Colisões: 997083 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 50699 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 7200 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 22201 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 18000 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 62201 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 2542 ms
+Nº total de Colisões: 4500016 colisões
+Código buscado: 919061487 | Posicão:61487 | Quantidade comparações: 1 | Tempo levado: 7200 ns
+Código buscado: 656540772 | Posicão:40772 | Quantidade comparações: 1 | Tempo levado: 899 ns
+Código buscado: 266198740 | Posicão:198740 | Quantidade comparações: 0 | Tempo levado: 800 ns
+Código buscado: 923186538 | Posicão:186538 | Quantidade comparações: 0 | Tempo levado: 701 ns
+Código buscado: 500235818 | Posicão:235818 | Quantidade comparações: 1 | Tempo levado: 900 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 3993 ms
+Nº total de Colisões: 4500032 colisões
+Código buscado: 919061487 | Posicão:358509 | Quantidade comparações: 0 | Tempo levado: 2000 ns
+Código buscado: 656540772 | Posicão:48047 | Quantidade comparações: 1 | Tempo levado: 1300 ns
+Código buscado: 266198740 | Posicão:41198 | Quantidade comparações: 1 | Tempo levado: 1100 ns
+Código buscado: 923186538 | Posicão:220173 | Quantidade comparações: 1 | Tempo levado: 1000 ns
+Código buscado: 500235818 | Posicão:457053 | Quantidade comparações: 0 | Tempo levado: 700 ns
+
+
+
+
+
+
+
+
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 402226 ms
+Nº total de Colisões: 4997039 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 18300 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 5500 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 13200 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 13000 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 31300 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 26420 ms
+Nº total de Colisões: 19500000 colisões
+Código buscado: 919061487 | Posicão:61487 | Quantidade comparações: 1 | Tempo levado: 7400 ns
+Código buscado: 656540772 | Posicão:40772 | Quantidade comparações: 1 | Tempo levado: 1300 ns
+Código buscado: 266198740 | Posicão:198740 | Quantidade comparações: 0 | Tempo levado: 800 ns
+Código buscado: 923186538 | Posicão:186538 | Quantidade comparações: 0 | Tempo levado: 700 ns
+Código buscado: 500235818 | Posicão:235818 | Quantidade comparações: 1 | Tempo levado: 1300 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 29927 ms
+Nº total de Colisões: 19500000 colisões
+Código buscado: 919061487 | Posicão:358509 | Quantidade comparações: 0 | Tempo levado: 9200 ns
+Código buscado: 656540772 | Posicão:48047 | Quantidade comparações: 1 | Tempo levado: 2700 ns
+Código buscado: 266198740 | Posicão:41198 | Quantidade comparações: 1 | Tempo levado: 1300 ns
+Código buscado: 923186538 | Posicão:220173 | Quantidade comparações: 1 | Tempo levado: 2000 ns
+Código buscado: 500235818 | Posicão:457053 | Quantidade comparações: 0 | Tempo levado: 1201 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 500000
+Tempo total para inserção: 2935538 ms
+Nº total de Colisões: 19997019 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 18300 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 8200 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 15400 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 16700 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 42200 ns
+
+
+
+
+
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 63 ms
+Nº total de Colisões: 447608 colisões
+Código buscado: 919061487 | Posicão:311487 | Quantidade comparações: 1 | Tempo levado: 2600 ns
+Código buscado: 656540772 | Posicão:290772 | Quantidade comparações: 0 | Tempo levado: 500 ns
+Código buscado: 266198740 | Posicão:698740 | Quantidade comparações: 0 | Tempo levado: 500 ns
+Código buscado: 923186538 | Posicão:686538 | Quantidade comparações: 1 | Tempo levado: 1600 ns
+Código buscado: 500235818 | Posicão:735818 | Quantidade comparações: 1 | Tempo levado: 900 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 406 ms
+Nº total de Colisões: 447837 colisões
+Código buscado: 919061487 | Posicão:537764 | Quantidade comparações: 0 | Tempo levado: 2000 ns
+Código buscado: 656540772 | Posicão:72071 | Quantidade comparações: 0 | Tempo levado: 1000 ns
+Código buscado: 266198740 | Posicão:61797 | Quantidade comparações: 1 | Tempo levado: 1200 ns
+Código buscado: 923186538 | Posicão:330259 | Quantidade comparações: 0 | Tempo levado: 600 ns
+Código buscado: 500235818 | Posicão:685579 | Quantidade comparações: 0 | Tempo levado: 800 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 23151 ms
+Nº total de Colisões: 997083 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 35600 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 14100 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 40100 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 45000 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 84700 ns
+
+
+
+
+
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 1251 ms
+Nº total de Colisões: 4250936 colisões
+Código buscado: 919061487 | Posicão:311487 | Quantidade comparações: 1 | Tempo levado: 2500 ns
+Código buscado: 656540772 | Posicão:290772 | Quantidade comparações: 0 | Tempo levado: 800 ns
+Código buscado: 266198740 | Posicão:698740 | Quantidade comparações: 0 | Tempo levado: 900 ns
+Código buscado: 923186538 | Posicão:686538 | Quantidade comparações: 1 | Tempo levado: 13200 ns
+Código buscado: 500235818 | Posicão:735818 | Quantidade comparações: 1 | Tempo levado: 1000 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 3047 ms
+Nº total de Colisões: 4250972 colisões
+Código buscado: 919061487 | Posicão:537764 | Quantidade comparações: 0 | Tempo levado: 2100 ns
+Código buscado: 656540772 | Posicão:72071 | Quantidade comparações: 0 | Tempo levado: 1500 ns
+Código buscado: 266198740 | Posicão:61797 | Quantidade comparações: 1 | Tempo levado: 1600 ns
+Código buscado: 923186538 | Posicão:330259 | Quantidade comparações: 0 | Tempo levado: 700 ns
+Código buscado: 500235818 | Posicão:685579 | Quantidade comparações: 0 | Tempo levado: 1100 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 731922 ms
+Nº total de Colisões: 4997039 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 17700 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 5599 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 15099 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 13399 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 33301 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 18109 ms
+Nº total de Colisões: 19250000 colisões
+Código buscado: 919061487 | Posicão:311487 | Quantidade comparações: 1 | Tempo levado: 4699 ns
+Código buscado: 656540772 | Posicão:290772 | Quantidade comparações: 0 | Tempo levado: 800 ns
+Código buscado: 266198740 | Posicão:698740 | Quantidade comparações: 0 | Tempo levado: 700 ns
+Código buscado: 923186538 | Posicão:686538 | Quantidade comparações: 1 | Tempo levado: 901 ns
+Código buscado: 500235818 | Posicão:735818 | Quantidade comparações: 1 | Tempo levado: 900 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 22970 ms
+Nº total de Colisões: 19250000 colisões
+Código buscado: 919061487 | Posicão:537764 | Quantidade comparações: 0 | Tempo levado: 4000 ns
+Código buscado: 656540772 | Posicão:72071 | Quantidade comparações: 0 | Tempo levado: 1000 ns
+Código buscado: 266198740 | Posicão:61797 | Quantidade comparações: 1 | Tempo levado: 1801 ns
+Código buscado: 923186538 | Posicão:330259 | Quantidade comparações: 0 | Tempo levado: 900 ns
+Código buscado: 500235818 | Posicão:685579 | Quantidade comparações: 0 | Tempo levado: 800 ns
+
+
+
+
+
+
+
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 750000
+Tempo total para inserção: 2989880 ms
+Nº total de Colisões: 19997019 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 12700 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 4500 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 15800 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 11500 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 26400 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 47 ms
+Nº total de Colisões: 367833 colisões
+Código buscado: 919061487 | Posicão:62406 | Quantidade comparações: 0 | Tempo levado: 1600 ns
+Código buscado: 656540772 | Posicão:541428 | Quantidade comparações: 0 | Tempo levado: 600 ns
+Código buscado: 266198740 | Posicão:199006 | Quantidade comparações: 0 | Tempo levado: 500 ns
+Código buscado: 923186538 | Posicão:187461 | Quantidade comparações: 0 | Tempo levado: 500 ns
+Código buscado: 500235818 | Posicão:236318 | Quantidade comparações: 1 | Tempo levado: 1000 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 312 ms
+Nº total de Colisões: 368422 colisões
+Código buscado: 919061487 | Posicão:717018 | Quantidade comparações: 0 | Tempo levado: 1500 ns
+Código buscado: 656540772 | Posicão:96095 | Quantidade comparações: 0 | Tempo levado: 700 ns
+Código buscado: 266198740 | Posicão:82396 | Quantidade comparações: 1 | Tempo levado: 900 ns
+Código buscado: 923186538 | Posicão:440346 | Quantidade comparações: 1 | Tempo levado: 700 ns
+Código buscado: 500235818 | Posicão:914105 | Quantidade comparações: 0 | Tempo levado: 900 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 1000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 23507 ms
+Nº total de Colisões: 997083 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 26500 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 1556600 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 31900 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 24900 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 62500 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 969 ms
+Nº total de Colisões: 4006868 colisões
+Código buscado: 919061487 | Posicão:62406 | Quantidade comparações: 0 | Tempo levado: 35200 ns
+Código buscado: 656540772 | Posicão:541428 | Quantidade comparações: 0 | Tempo levado: 500 ns
+Código buscado: 266198740 | Posicão:199006 | Quantidade comparações: 0 | Tempo levado: 300 ns
+Código buscado: 923186538 | Posicão:187461 | Quantidade comparações: 0 | Tempo levado: 400 ns
+Código buscado: 500235818 | Posicão:236318 | Quantidade comparações: 1 | Tempo levado: 500 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 2673 ms
+Nº total de Colisões: 4006788 colisões
+Código buscado: 919061487 | Posicão:717018 | Quantidade comparações: 0 | Tempo levado: 600 ns
+Código buscado: 656540772 | Posicão:96095 | Quantidade comparações: 0 | Tempo levado: 600 ns
+Código buscado: 266198740 | Posicão:82396 | Quantidade comparações: 1 | Tempo levado: 600 ns
+Código buscado: 923186538 | Posicão:440346 | Quantidade comparações: 1 | Tempo levado: 600 ns
+Código buscado: 500235818 | Posicão:914105 | Quantidade comparações: 0 | Tempo levado: 600 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 5000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 469284 ms
+Nº total de Colisões: 4997039 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 1500 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 900 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 1800 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 2000 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 3700 ns
+
+Tipo de Hash: Divisão| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 13129 ms
+Nº total de Colisões: 19000001 colisões
+Código buscado: 919061487 | Posicão:62406 | Quantidade comparações: 0 | Tempo levado: 1400 ns
+Código buscado: 656540772 | Posicão:541428 | Quantidade comparações: 0 | Tempo levado: 200 ns
+Código buscado: 266198740 | Posicão:199006 | Quantidade comparações: 0 | Tempo levado: 300 ns
+Código buscado: 923186538 | Posicão:187461 | Quantidade comparações: 0 | Tempo levado: 300 ns
+Código buscado: 500235818 | Posicão:236318 | Quantidade comparações: 1 | Tempo levado: 500 ns
+
+Tipo de Hash: Multiplicação| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 22871 ms
+Nº total de Colisões: 19000001 colisões
+Código buscado: 919061487 | Posicão:717018 | Quantidade comparações: 0 | Tempo levado: 1300 ns
+Código buscado: 656540772 | Posicão:96095 | Quantidade comparações: 0 | Tempo levado: 700 ns
+Código buscado: 266198740 | Posicão:82396 | Quantidade comparações: 1 | Tempo levado: 600 ns
+Código buscado: 923186538 | Posicão:440346 | Quantidade comparações: 1 | Tempo levado: 500 ns
+Código buscado: 500235818 | Posicão:914105 | Quantidade comparações: 0 | Tempo levado: 600 ns
+
+Tipo de Hash: Dobramento| Tamanho de Conjunto: 20000000| Tamanho de Tabela Hash: 999999
+Tempo total para inserção: 4317450 ms
+Nº total de Colisões: 19997019 colisões
+Código buscado: 919061487 | Posicão:1467 | Quantidade comparações: 163 | Tempo levado: 19700 ns
+Código buscado: 656540772 | Posicão:1968 | Quantidade comparações: 76 | Tempo levado: 1000 ns
+Código buscado: 266198740 | Posicão:1204 | Quantidade comparações: 206 | Tempo levado: 1500 ns
+Código buscado: 923186538 | Posicão:1647 | Quantidade comparações: 203 | Tempo levado: 1400 ns
+Código buscado: 500235818 | Posicão:1553 | Quantidade comparações: 505 | Tempo levado: 2500 ns
